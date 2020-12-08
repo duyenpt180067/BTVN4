@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Details">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="174dp"
+            android:layout_height="38dp"
+            android:layout_toEndOf="@+id/sender"
+            android:layout_toRightOf="@+id/sender"
+            android:text="Name"
+            android:textColor="@color/black"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="0dp"
+            android:textSize="28dp" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="245dp"
+            android:layout_height="24dp"
+            android:layout_below="@+id/name"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_toEndOf="@+id/sender"
+            android:layout_toRightOf="@+id/sender"
+            android:text="Title"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="245dp"
+            android:layout_height="24dp"
+            android:layout_below="@+id/title"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_toEndOf="@+id/sender"
+            android:layout_toRightOf="@+id/sender"
+            android:text="Content"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/name"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            android:text="12:37PM"
+            android:textSize="18dp" />
+
+        <CheckBox
+            android:id="@+id/favorite"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_alignBottom="@id/content"
+            android:layout_alignParentRight="true"
+            android:button="@drawable/ic_baseline_star_border_24"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reply"
+            android:textSize="30dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/btn_exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Exit" />
+
+    </LinearLayout>
+
+</LinearLayout>

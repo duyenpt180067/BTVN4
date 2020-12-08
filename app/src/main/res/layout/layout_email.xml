@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="50px">
+
+        <LinearLayout
+            android:id="@+id/titleLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+            <TextView
+                android:id="@+id/titleImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="E"
+                android:textSize="27dp"
+                android:background="@drawable/oval"
+                />
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/ToRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/titleLayout"
+            android:src="@drawable/ic_baseline_label_important_24"/>
+        <TextView
+            android:id="@+id/nameEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edurilla.com"
+            android:textSize="20dp"
+            android:layout_toRightOf="@id/ToRight"/>
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12:34 AM"
+            android:textSize="16dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            />
+
+        <TextView
+            android:id="@+id/titleContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/titleLayout"
+            android:layout_marginTop="20px"
+            android:textSize="17dp"
+            android:text="Are you looking to Learn Web Design..."
+            android:layout_below="@id/ToRight"/>
+
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/titleLayout"
+            android:layout_marginTop="20px"
+            android:textSize="17dp"
+            android:text="Are you looking to Learn Web Design..."
+            android:layout_below="@id/titleContent"/>
+
+        <CheckBox
+            android:id="@+id/star"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/time"
+            android:layout_alignParentRight="true"
+            android:background="#FFFFFF"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/titleLayout"
+            android:textColor="#c0c0c0"
+            android:text="_______________________________________________________________"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
